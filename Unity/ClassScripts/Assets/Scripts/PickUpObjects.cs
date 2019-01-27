@@ -6,40 +6,64 @@ using UnityEngine;
 public class PickUpObjects : MonoBehaviour
 {
     private Vector3 newposition;
-    private bool Equiped;
-    public KeyCode Key;
+    public bool Equiped;
+    public KeyCodeData Key;
     private GameObject OBJ;
-    
+    private bool run;
+
+    private void Start()
+    {
+        Equiped = false;
+    }
+
     private void OnTriggerStay(Collider obj)
     {
-        print("enter");
-        if (!Equiped)
+        if (obj.CompareTag("PickupObject"))
         {
-            if (Input.GetKeyDown(Key))
+            if (!Equiped)
             {
-                OBJ = obj.gameObject;
-                OBJ.GetComponent<Rigidbody>().useGravity = false;
-                print("Entered");
-                OBJ.transform.SetParent(transform);
-                newposition.x = -.4f;
-                newposition.y = 0;
-                newposition.z = 0;
-                OBJ.transform.localPosition = newposition;
-                Equiped = true;
+                if (Input.GetKeyDown(Key.key))
+                {
+                    OBJ = obj.gameObject;
+                    OBJ.GetComponent<Rigidbody>().useGravity = false;
+                    OBJ.transform.SetParent(transform);
+                    newposition.x = -.4f;
+                    newposition.y = 0;
+                    newposition.z = 0;
+                    OBJ.transform.localPosition = newposition;
+                    StartCoroutine(Equip());
+                    //Equiped = true;
+                }
+            }
+            else
+            {
+                if (Input.GetKeyDown(Key.key))
+                {
+                    OBJ.GetComponent<Rigidbody>().useGravity = true;
+                    OBJ.transform.SetParent(null);
+                    StartCoroutine(Equip());
+                    //Equiped = false;
+                }
             }
         }
     }
 
-    private void Update()
+   private IEnumerator Equip()
+   {
+      yield return new WaitForFixedUpdate();
+      Equiped = !Equiped;
+   }
+
+    /*private void Update()
     {
         if (Equiped)
         {
-            if (Input.GetKeyUp(Key))
+            if (Input.GetKey(Key.key))
             {
                 OBJ.GetComponent<Rigidbody>().useGravity = true;
                 OBJ.transform.SetParent(null);
                 Equiped = false;
             }
         }
-    }
+    }*/
 }
