@@ -661,6 +661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Equiped: 0
   Key: {fileID: 11400000, guid: 71a4613d2f2c54f468b1c43ba004dcd0, type: 2}
+  player: {fileID: 11400000, guid: eb1c52ebcde1b074aad723c6fce2def2, type: 2}
 --- !u!1 &1499528881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1113,6 +1114,8 @@ MonoBehaviour:
   DialougeBox: {fileID: 1632327762}
   Dialouge: {fileID: 11400000, guid: 43c24b7a243ee91499e0ebb48e7ea584, type: 2}
   InteractKey: {fileID: 11400000, guid: 71a4613d2f2c54f468b1c43ba004dcd0, type: 2}
+  player: {fileID: 11400000, guid: eb1c52ebcde1b074aad723c6fce2def2, type: 2}
+  ObjectNeeded: {fileID: 1646143254}
 --- !u!4 &2043407089
 Transform:
   m_ObjectHideFlags: 0

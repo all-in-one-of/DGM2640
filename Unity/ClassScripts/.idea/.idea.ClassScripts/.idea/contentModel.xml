@@ -19,8 +19,12 @@
             <e p="MovePatternNotGrounded.cs" t="Include" />
           </e>
           <e p="DialougeListData.cs" t="Include" />
+          <e p="GameObjectData.cs" t="Include" />
           <e p="KeyCodeData.cs" t="Include" />
+          <e p="NameID.cs" t="Include" />
+          <e p="NPC.cs" t="Include" />
           <e p="PickUpObjects.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
           <e p="StringData.cs" t="Include" />
           <e p="TalkToNPC.cs" t="Include" />
         </e>

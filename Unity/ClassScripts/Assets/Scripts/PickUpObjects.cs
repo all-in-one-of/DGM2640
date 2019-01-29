@@ -10,10 +10,13 @@ public class PickUpObjects : MonoBehaviour
     public KeyCodeData Key;
     private GameObject OBJ;
     private bool run;
+    public Player player;
 
     private void Start()
     {
         Equiped = false;
+        player.EquippedItem = null;
+        player.EquippedItemName = "None";
     }
 
     private void OnTriggerStay(Collider obj)
@@ -31,6 +34,8 @@ public class PickUpObjects : MonoBehaviour
                     newposition.y = 0;
                     newposition.z = 0;
                     OBJ.transform.localPosition = newposition;
+                    player.EquippedItem = OBJ;
+                    player.EquippedItemName = OBJ.name;
                     StartCoroutine(Equip());
                     //Equiped = true;
                 }
@@ -41,6 +46,8 @@ public class PickUpObjects : MonoBehaviour
                 {
                     OBJ.GetComponent<Rigidbody>().useGravity = true;
                     OBJ.transform.SetParent(null);
+                    player.EquippedItem = null;
+                    player.EquippedItemName = "None";
                     StartCoroutine(Equip());
                     //Equiped = false;
                 }

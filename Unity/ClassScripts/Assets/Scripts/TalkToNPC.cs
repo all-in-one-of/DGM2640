@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 using UnityEngine.UI;
+using Vector3 = UnityEngine.Vector3;
 
 public class TalkToNPC : MonoBehaviour
 {
@@ -10,27 +12,51 @@ public class TalkToNPC : MonoBehaviour
     public DialougeListData Dialouge;
     public KeyCodeData InteractKey;
     private int DialougeLine;
+    //public NPC nonPlayer;
+    public Player player;
+    private bool itemrecieved;
+    public GameObject ObjectNeeded;
+    private Vector3 position;
 
     private void Start()
     {
+        itemrecieved = false;
         DialougeBox.text = "";
         DialougeLine = 0;
     }
 
     private void OnTriggerStay(Collider obj)
     {
-        if(obj.CompareTag("Player"))
-        if (Input.GetKeyDown(InteractKey.key))
+        if (obj.CompareTag("Player"))
         {
-            if (DialougeLine < Dialouge.list.Count)
+            if (Input.GetKeyDown(InteractKey.key))
             {
-                DialougeBox.text = Dialouge.list[DialougeLine].value;
-                DialougeLine++;
-            }
-            else
-            {
-                DialougeBox.text = "";
-                DialougeLine = 0;
+                if (player.EquippedItemName == ObjectNeeded.name)
+                {
+                    player.EquippedItem.transform.SetParent(transform);
+                    player.EquippedItem.transform.localPosition = position;
+                    itemrecieved = true;
+                    player.EquippedItem = null;
+                    player.EquippedItemName = "None";
+                    DialougeBox.text = "Thank You";
+                }
+                else if (!itemrecieved)
+                {
+                    if (DialougeLine < Dialouge.list.Count)
+                    {
+                        DialougeBox.text = Dialouge.list[DialougeLine].value;
+                        DialougeLine++;
+                    }
+                    else
+                    {
+                        DialougeBox.text = "";
+                        DialougeLine = 0;
+                    }
+                }
+                else
+                {
+                    DialougeBox.text = "Thank You";
+                }
             }
         }
     }
