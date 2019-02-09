@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Phoenix.ma
-//Last modified: Fri, Feb 08, 2019 02:03:21 PM
+//Last modified: Fri, Feb 08, 2019 02:25:45 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "1764564E-4718-2812-111D-878083A45269";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 74.587931257159298 9.0341614273688631 9.4047019038463517 ;
+	setAttr ".t" -type "double3" 378.28739490951659 36.683952149135905 57.505971480955807 ;
 	setAttr ".r" -type "double3" -5.1383524646780234 -278.99999999993906 -5.0828867549534255e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "AFEF7421-4055-E54E-8A13-A581624BDB82";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 74.980148047735355;
+	setAttr ".coi" 383.70592812548796;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
