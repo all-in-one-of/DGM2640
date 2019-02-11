@@ -535,6 +535,7 @@ GameObject:
   - component: {fileID: 1437135195}
   - component: {fileID: 1437135194}
   - component: {fileID: 1437135200}
+  - component: {fileID: 1437135201}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -662,6 +663,19 @@ MonoBehaviour:
   Equiped: 0
   Key: {fileID: 11400000, guid: 71a4613d2f2c54f468b1c43ba004dcd0, type: 2}
   player: {fileID: 11400000, guid: eb1c52ebcde1b074aad723c6fce2def2, type: 2}
+--- !u!114 &1437135201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437135193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 931b17db59370b74da2bce7daea4fb67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bullet: {fileID: 1619992352864456719, guid: ba5a4bacc2f3ec348b15ae05f4141986, type: 3}
 --- !u!1 &1499528881
 GameObject:
   m_ObjectHideFlags: 0

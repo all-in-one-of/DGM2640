@@ -25,6 +25,7 @@
           <e p="NPC.cs" t="Include" />
           <e p="PickUpObjects.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="Shooting.cs" t="Include" />
           <e p="StringData.cs" t="Include" />
           <e p="TalkToNPC.cs" t="Include" />
         </e>
