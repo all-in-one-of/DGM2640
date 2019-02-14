@@ -5,6 +5,7 @@
     <e p="C:\Users\10802160\Documents\Repos\DGM2640\Unity\InClassScripts" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="MoveCharacter.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="CharacterMovement" t="Include">
             <e p="Behaviours.cs" t="Include" />
@@ -18,6 +19,7 @@
             <e p="Vector3Data.cs" t="Include" />
           </e>
           <e p="DebugObject.cs" t="Include" />
+          <e p="Flip.cs" t="Include" />
           <e p="MatchID.cs" t="Include" />
           <e p="TriggerData.cs" t="Include" />
           <e p="Updating.cs" t="Include" />
