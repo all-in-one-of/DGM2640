@@ -8,6 +8,7 @@
         <e p="MoveCharacter.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="CharacterMovement" t="Include">
+            <e p="AnimationTriggers.cs" t="Include" />
             <e p="Behaviours.cs" t="Include" />
             <e p="GetID.cs" t="Include" />
             <e p="NameID.cs" t="Include" />
