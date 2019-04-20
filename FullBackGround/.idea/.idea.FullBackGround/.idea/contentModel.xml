@@ -1,12 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Owner\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_FullBackGround.-493763173.00" t="ExcludeRecursive" />
-    <e p="E:\School\Fall2018\DGM2210_2\FullBackGround" t="IncludeRecursive">
+    <e p="C:\Users\Owner\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_FullBackGround.-520982820.00" t="ExcludeRecursive" />
+    <e p="E:\School\Spring2019\DGM2640\FullBackGround" t="IncludeRecursive">
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Giraffe" t="Include">
+          <e p="Giraffe.cs" t="Include" />
+          <e p="GiraffeAnim.cs" t="Include" />
+          <e p="OnStartEvent.cs" t="Include" />
+        </e>
         <e p="OBJExport" t="Include">
           <e p="OBJExporter.cs" t="Include" />
+        </e>
+        <e p="Standard Assets" t="Include">
+          <e p="Environment" t="Include">
+            <e p="Water" t="Include">
+              <e p="Water" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="Displace.cs" t="Include" />
+                  <e p="GerstnerDisplace.cs" t="Include" />
+                  <e p="MeshContainer.cs" t="Include" />
+                  <e p="PlanarReflection.cs" t="Include" />
+                  <e p="SpecularLighting.cs" t="Include" />
+                  <e p="Water.cs" t="Include" />
+                  <e p="WaterBase.cs" t="Include" />
+                  <e p="WaterTile.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="FXWaterPro.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
         </e>
       </e>
       <e p="FullBackGround.sln" t="IncludeFlat" />

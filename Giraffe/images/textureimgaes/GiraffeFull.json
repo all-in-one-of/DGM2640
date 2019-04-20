@@ -32,19 +32,13 @@
         "Hair": {
             "shader": "Main shader"
         },
+        "InsideMouth": {
+            "shader": "Main shader"
+        },
         "Legs": {
             "shader": "Main shader"
         },
-        "Muscles2": {
-            "shader": "Main shader"
-        },
-        "Organs1": {
-            "shader": "Main shader"
-        },
-        "Skeleton3": {
-            "shader": "Main shader"
-        },
-        "lambert1": {
+        "Teeth1": {
             "shader": "Main shader"
         }
     }
