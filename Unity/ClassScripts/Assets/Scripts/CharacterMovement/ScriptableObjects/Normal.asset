@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveX: {fileID: 11400000, guid: 68d16dee3296f6346982562d20ec87fb, type: 2}
   MoveY: {fileID: 11400000, guid: b3fe19b9a81631f43a53a3f23596737a, type: 2}
-  MoveZ: {fileID: 11400000, guid: 55c54121224c1254cbb94c1b89b7a479, type: 2}
+  MoveZ: {fileID: 11400000, guid: b3fe19b9a81631f43a53a3f23596737a, type: 2}
   Jump: {fileID: 11400000, guid: 0407a37f7fd09af46a0003af00cb445d, type: 2}
   Gravity: {fileID: 11400000, guid: 85694aa17f4a866418ce0375cffd77bf, type: 2}
   RotX: {fileID: 11400000, guid: b3fe19b9a81631f43a53a3f23596737a, type: 2}
